@@ -1,0 +1,9 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="logdna-cli-plugin" audience="cli" href="/docs/logdna-cli-plugin?topic=logdna-cli-plugin"}
+IBM Cloud Logging CLI
+
+   {: .navgroup id="reference"}
+   logdna-cli.md
+   {: .navgroup-end}
