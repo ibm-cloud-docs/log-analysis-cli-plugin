@@ -19,7 +19,7 @@ keywords: IBM Cloud Logging CLI, IBM Cloud Logging command line, IBM Cloud Loggi
 {:note: .note}
 
 
-# IBM Cloud logging (ibmcloud logging) CLI
+# IBM Cloud Logging (ibmcloud logging) CLI
 {: #logdna-cli}
 
 The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for LogDNA service instances for an account.
@@ -29,7 +29,7 @@ The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capa
 {: #logdna-cli-prereq}
 
 * Install the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
-* Install the {{site.data.keyword.mon_full_notm}} CLI by running the following command:
+* Install the {{site.data.keyword.cloud_notm}} Logging CLI by running the following command:
 
    ```sh
    ibmcloud plugin install logging
@@ -68,8 +68,8 @@ ibmcloud logging service-instances [OPTIONS]
 <dd>Show additional fields in the output.</dd>
 <dt>--quiet | -q</dt>
 <dd>Supresses verbose output.</dd>
-<dt>--json | -j</dt>
-<dd>Produces output as raw JSON.</dd>
+<dt>--output &lt;TYPE&gt;</dt>
+<dd>Type of output produced.  Only supported value is `JSON`.</dd>
 <dt>--help</dt>
 <dd>List options available for the command.</dd>
 </dl>
@@ -154,13 +154,13 @@ ibmcloud logging export --service-key <SERVICE_KEY> [OPTIONS]
 <dd>The starting time to be used for log entries.  No log entries early than this time will be returned.  `<TIME>` is specified as a UNIX timestamp in seconds or milliseconds. </dd>
 <dt>--to &lt;TIME&gt;</dt>
 <dd>The ending time to be used for log entries.  No log entries after than this time will be returned.  &lt;TIME&gt; is specified as a UNIX timestamp in seconds or milliseconds.</dd>
-<dt>-json | -j</dt>
-<dd>The export will be returned in JSON format.</dd>
+<dt>--output &lt;TYPE&gt;</dt>
+<dd>Type of output produced.  Only supported value is `JSON`.</dd>
 <dt>--query &lt;STRING&gt; | -q &lt;STRING&gt;</dt>
 <dd>A value to be searched for within the log.  All log entries containing the specified &lt;STRING&gt; will be returned.</dd>
 <dt>--prefer &lt;VALUE&gt; | -p &lt;VALUE&gt;</dt>
 <dd>The log lines you want to export.  Valid values are `HEAD` and `TAIL`.  `HEAD` specifies the first lines in the log will be exported.  `TAIL` specifies the last lines in the log will be exported.If not specified, the default is `TAIL`.</dd>
-<dt--email &lt;ADDRESS&gt; | -e &lt;ADDRESS&gt;</dt>
+<dt>--email &lt;ADDRESS&gt; | -e &lt;ADDRESS&gt;</dt>
 <dd>If specified, an email with a link to the export information will be sent to the specified email `<ADDRESS>`.  The recipient can use that link to download the exported information.</dd>
 <dt>--email-subject &lt;SUBJECT&gt; | --es &lt;SUBJECT&gt;</dt>
 <dd>Use with `--email` to specify a subject line to be included in the email that is sent.</dd>
