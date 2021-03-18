@@ -59,18 +59,17 @@ ibmcloud logging service-instances [OPTIONS]
 <dt>--service-name &lt;NAME&gt;> | --sn &lt;NAME&gt;</dt>
 <dd>Name of the service.</dd>
 <dt>-region &lt;NAME&gt; | -r &lt;NAME&gt;</dt>
-<dd>Name of the region, for example, `us-south` or `eu-gb`. If not specified, the targeted region will be used.</dd>
+<dd>Name of the region, for example, `us-south` or `eu-gb`. If not specified, the region logged into or targeted will be used.</dd>
 <dt>-g &lt;GROUP&gt;</dt>
 <dd>Resource Group associated with the hosted service.</dd>
 <dt>--all-resource-groups | --arg</dt>
 <dd>Services hosted across all resource groups.</dd>
-<dt>--long | -l</dt>
-<dd>Show additional fields in the output.</dd>
 <dt>--quiet | -q</dt>
 <dd>Supresses verbose output.</dd>
 <dt>--output &lt;TYPE&gt;</dt>
-<dd>Type of output produced.  Only supported value is `JSON`.</dd>
-<dt>--help</dt>
+<dd>A comma-separated list of output preferences enclosed in double-quotes (").  If only a single preference is specified, the double-quotes can be omitted. Supported options are `WIDE` and `JSON`.  <p>If `JSON` is specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in tabular format.</p> 
+<p>`WIDE` returns additional details in the output.</p></dd>
+<dt>--help | -h</dt>
 <dd>List options available for the command.</dd>
 </dl>
   
@@ -96,7 +95,7 @@ ibmcloud logging service-instances -g test-rg
 List all instances and include additional details, such as ID, GUID, and Resource ID.
 
 ```sh
-ibmcloud logging service-instances --long
+ibmcloud logging service-instances --output wide
 ```
 {: pre}
 
@@ -141,7 +140,7 @@ ibmcloud logging export --service-key <SERVICE_KEY> [OPTIONS]
 <dt>--service-key &lt;SERVICE_KEY&gt; | -s &lt;SERVICE_KEY&gt;</dt>
 <dd>(REQUIRED) Service key for the LogDNA instance.</dd>
 <dt>--region &lt;REGION&gt; | -r &lt;REGION&gt;</dt>
-<dd>The name of the region.  For example, `us-south` or `eu-gb`.</dd>
+<dd>Name of the region, for example, `us-south` or `eu-gb`. If not specified, the region logged into or targeted will be used.</dd>
 <dt>--hosts &lt;HOST_NAMES&gt; | --ho &lt;HOST_NAMES&gt;</dt>
 <dd>A comma-separated list of host names enclosed in double-quotes (").  If only a single host name is specified, the double-quotes can be omitted.  Log entries for the specified host names will be returned. </dd>
 <dt>--apps &lt;APP_NAMES&gt; | -a &lt;APP_NAMES&gt;</dt>
@@ -155,16 +154,16 @@ ibmcloud logging export --service-key <SERVICE_KEY> [OPTIONS]
 <dt>--to &lt;TIME&gt;</dt>
 <dd>The ending time to be used for log entries.  No log entries after than this time will be returned.  &lt;TIME&gt; is specified as a UNIX timestamp in seconds or milliseconds.</dd>
 <dt>--output &lt;TYPE&gt;</dt>
-<dd>Type of output produced.  Only supported value is `JSON`.</dd>
+<dd>Type of output produced.  If `JSON` is specified, output will be returned in JSON format.  If not specified, output will be returned in tabular format.</dd>
 <dt>--query &lt;STRING&gt; | -q &lt;STRING&gt;</dt>
 <dd>A value to be searched for within the log.  All log entries containing the specified &lt;STRING&gt; will be returned.</dd>
 <dt>--prefer &lt;VALUE&gt; | -p &lt;VALUE&gt;</dt>
-<dd>The log lines you want to export.  Valid values are `HEAD` and `TAIL`.  `HEAD` specifies the first lines in the log will be exported.  `TAIL` specifies the last lines in the log will be exported.If not specified, the default is `TAIL`.</dd>
+<dd>The log lines you want to export.  Valid values are `HEAD` and `TAIL`.  `HEAD` specifies the log lines will be exported from the earliest entry to the most current entry.  `TAIL` specifies the log lines will be exported in reverse order from the most current entry to the earliest entry. If not specified, the default is `TAIL`.</dd>
 <dt>--email &lt;ADDRESS&gt; | -e &lt;ADDRESS&gt;</dt>
 <dd>If specified, an email with a link to the export information will be sent to the specified email `<ADDRESS>`.  The recipient can use that link to download the exported information.</dd>
 <dt>--email-subject &lt;SUBJECT&gt; | --es &lt;SUBJECT&gt;</dt>
 <dd>Use with `--email` to specify a subject line to be included in the email that is sent.</dd>
-<dt>--help</dt>
+<dt>--help | -h</dt>
 <dd>List options available for the command.</dd>
 </dl>
   
