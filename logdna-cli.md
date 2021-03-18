@@ -60,9 +60,11 @@ ibmcloud logging service-instances [OPTIONS]
 <dd>Name of the service.</dd>
 <dt>-region &lt;NAME&gt; | -r &lt;NAME&gt;</dt>
 <dd>Name of the region, for example, `us-south` or `eu-gb`. If not specified, the region logged into or targeted will be used.</dd>
+<dt>--all-regions</dt>
+<dd>Services hosted across all regions.</dd>
 <dt>-g &lt;GROUP&gt;</dt>
 <dd>Resource Group associated with the hosted service.</dd>
-<dt>--all-resource-groups | --arg</dt>
+<dt>--all-resource-groups</dt>
 <dd>Services hosted across all resource groups.</dd>
 <dt>--quiet | -q</dt>
 <dd>Supresses verbose output.</dd>
