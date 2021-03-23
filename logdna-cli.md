@@ -58,7 +58,7 @@ ibmcloud logging service-instances [OPTIONS]
 <dl>
 <dt>--service-name &lt;NAME&gt;> | --sn &lt;NAME&gt;</dt>
 <dd>Name of the service.</dd>
-<dt>-region &lt;NAME&gt; | -r &lt;NAME&gt;</dt>
+<dt>--region &lt;NAME&gt; | -r &lt;NAME&gt;</dt>
 <dd>Name of the region, for example, `us-south` or `eu-gb`. If not specified, the region logged into or targeted will be used.</dd>
 <dt>--all-regions</dt>
 <dd>Services hosted across all regions.</dd>
