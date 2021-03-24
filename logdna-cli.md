@@ -2,7 +2,7 @@
  
 copyright:
   years:  2021
-lastupdated: "2021-03-16"
+lastupdated: "2021-03-24"
 
 subcollection: logdna-plugin-cli
 
@@ -22,7 +22,7 @@ keywords: IBM Cloud Logging CLI, IBM Cloud Logging command line, IBM Cloud Loggi
 # IBM Cloud Logging (ibmcloud logging) CLI
 {: #logdna-cli}
 
-The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for LogDNA service instances for an account.
+The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for logging service instances for an account.
 {: shortdesc} 
 
 ## Prerequisites
@@ -56,7 +56,7 @@ ibmcloud logging service-instances [OPTIONS]
 {: #logdna-service-instances-options}
 
 <dl>
-<dt>--service-name &lt;NAME&gt;> | --sn &lt;NAME&gt;</dt>
+<dt>--service-name &lt;NAME&gt; | --sn &lt;NAME&gt;</dt>
 <dd>Name of the service.</dd>
 <dt>--region &lt;NAME&gt; | -r &lt;NAME&gt;</dt>
 <dd>Name of the region, for example, `us-south` or `eu-gb`. If not specified, the region logged into or targeted will be used.</dd>
@@ -69,7 +69,7 @@ ibmcloud logging service-instances [OPTIONS]
 <dt>--quiet | -q</dt>
 <dd>Supresses verbose output.</dd>
 <dt>--output &lt;TYPE&gt;</dt>
-<dd>A comma-separated list of output preferences enclosed in double-quotes (").  If only a single preference is specified, the double-quotes can be omitted. Supported options are `WIDE` and `JSON`.  <p>If `JSON` is specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in tabular format.</p> 
+<dd>A comma-separated list of output preferences enclosed in double-quotes (").  If only a single preference is specified, the double-quotes can be omitted. Supported options are `WIDE` and `JSON`.  <p>If `JSON` is specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.</p> 
 <p>`WIDE` returns additional details in the output.</p></dd>
 <dt>--help | -h</dt>
 <dd>List options available for the command.</dd>
