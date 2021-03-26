@@ -243,3 +243,5 @@ Send an email with a downloadable link to `myemail@mycompany.com` with the subje
 ibmcloud logging export --service-key <SERVICE_KEY> --apps myapp --email myemail@mycompany.com --email-subject "Emailing myapp logs"
 ```
 {: pre}
+
+
