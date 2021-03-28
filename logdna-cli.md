@@ -245,5 +245,3 @@ ibmcloud logging export --service-key <SERVICE_KEY> --apps myapp --email myemail
 {: pre}
 
 
-
-
