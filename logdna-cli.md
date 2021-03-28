@@ -2,7 +2,7 @@
  
 copyright:
   years:  2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 subcollection: logdna-plugin-cli
 
@@ -22,7 +22,7 @@ keywords: IBM Cloud Logging CLI, IBM Cloud Logging command line, IBM Cloud Loggi
 # IBM Cloud Logging (ibmcloud logging) CLI
 {: #logdna-cli}
 
-The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for logging service instances for an account.
+The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} service instances for an account.
 {: shortdesc} 
 
 ## Prerequisites
@@ -44,7 +44,7 @@ You're notified on the command line when updates to the {{site.data.keyword.clou
 ## ibmcloud logging service-instances
 {: #logdna-service-instances}
 
-Use this command to list the service instances for LogDNA and {{site.data.keyword.at_full_notm}}. 
+Use this command to list the service instances for {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}}. 
 
 ```sh
 ibmcloud logging service-instances [OPTIONS]
@@ -127,7 +127,7 @@ ibmcloud logging service-instances --region us-south --output json
 ## ibmcloud logging export
 {: #logdna-export}
 
-Use this command to export LogDNA log information.  Options are provided to filter the exported log information. Exported information is presented as a response to the command and can optionally be accessed by a link sent to an email address provided on the command.
+Use this command to export log information. Options are provided to filter the exported log information. Exported information is presented as a response to the command and can optionally be accessed by a link sent to an email address provided on the command.
 
 ```sh
 ibmcloud logging export --service-key <SERVICE_KEY> [OPTIONS]
@@ -140,7 +140,7 @@ ibmcloud logging export --service-key <SERVICE_KEY> [OPTIONS]
 
 <dl>
 <dt>--service-key &lt;SERVICE_KEY&gt; | -s &lt;SERVICE_KEY&gt;</dt>
-<dd>(REQUIRED) Service key for the LogDNA instance.</dd>
+<dd>(REQUIRED) Service key for the instance.</dd>
 <dt>--region &lt;REGION&gt; | -r &lt;REGION&gt;</dt>
 <dd>Name of the region, for example, `us-south` or `eu-gb`. If not specified, the region logged into or targeted will be used.</dd>
 <dt>--hosts &lt;HOST_NAMES&gt; | --ho &lt;HOST_NAMES&gt;</dt>
