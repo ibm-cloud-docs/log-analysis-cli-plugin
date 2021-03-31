@@ -20,7 +20,11 @@ keywords: IBM Cloud Logging CLI, IBM Cloud Logging command line, IBM Cloud Loggi
 
 
 # Logging (ibmcloud logging) CLI
+<<<<<<< HEAD
 {: #log-analysis-cli}
+=======
+{: #logdna-cli}
+>>>>>>> c278269e9bc3e79633e791dc3a6c34e42e576366
 
 The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} service instances for an account.
 {: shortdesc} 
@@ -243,7 +247,5 @@ Send an email with a downloadable link to `myemail@mycompany.com` with the subje
 ibmcloud logging export --service-key <SERVICE_KEY> --apps myapp --email myemail@mycompany.com --email-subject "Emailing myapp logs"
 ```
 {: pre}
-
-
 
 
