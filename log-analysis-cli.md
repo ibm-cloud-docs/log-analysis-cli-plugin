@@ -26,7 +26,7 @@ The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capa
 {: shortdesc} 
 
 ## Prerequisites
-{: #logdna-cli-prereq}
+{: #log-analysis-cli-prereq}
 
 * Install the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 * Install the Logging CLI by running the following command:
@@ -42,7 +42,7 @@ You're notified on the command line when updates to the {{site.data.keyword.clou
 
 
 ## ibmcloud logging service-instances
-{: #logdna-service-instances}
+{: #log-analysis-service-instances}
 
 Use this command to list the service instances for {{site.data.keyword.la_full_notm}}. 
 
@@ -53,7 +53,7 @@ ibmcloud logging service-instances [OPTIONS]
 
 
 ### Command options 
-{: #logdna-service-instances-options}
+{: #log-analysis-service-instances-options}
 
 <dl>
 <dt>--service-name &lt;NAME&gt; | --sn &lt;NAME&gt;</dt>
@@ -76,7 +76,7 @@ ibmcloud logging service-instances [OPTIONS]
 </dl>
   
 ### Examples
-{: #logdna-service-instances-examples}
+{: #log-analysis-service-instances-examples}
 
 The following are examples using the **`ibmcloud logging service-instances`** command.
 
@@ -125,7 +125,7 @@ ibmcloud logging service-instances --region us-south --output json
 <!-- ===================================== -->
 
 ## ibmcloud logging export
-{: #logdna-export}
+{: #log-analysis-export}
 
 Use this command to export log information. Options are provided to filter the exported log information. Exported information is presented as a response to the command and can optionally be accessed by a link sent to an email address provided on the command.
 
@@ -136,7 +136,7 @@ ibmcloud logging export --service-key <SERVICE_KEY> [OPTIONS]
 
 
 ### Command options 
-{: #logdna-export-options}
+{: #log-analysis-export-options}
 
 <dl>
 <dt>--service-key &lt;SERVICE_KEY&gt; | -s &lt;SERVICE_KEY&gt;</dt>
@@ -170,7 +170,7 @@ ibmcloud logging export --service-key <SERVICE_KEY> [OPTIONS]
 </dl>
   
 ### Examples
-{: #logdna-export-examples}
+{: #log-analysis-export-examples}
 
 The following are examples using the **`ibmcloud logging export`** command.
 
