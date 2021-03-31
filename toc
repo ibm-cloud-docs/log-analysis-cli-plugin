@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="log-analysis-cli-plugin" audience="cli" href="/docs/log-analysis-cli-plugin?topic=log-analysis-cli-plugin-log-analysis-cli" path="log-analysis-cli-plugin"}
-IBM Cloud Logging CLI
+IBM Log Analysis CLI
 
     {: .navgroup id="reference"}
     log-analysis-cli.md
