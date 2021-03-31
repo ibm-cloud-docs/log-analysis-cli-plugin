@@ -29,7 +29,7 @@ The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capa
 {: #logdna-cli-prereq}
 
 * Install the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
-* Install the {{site.data.keyword.cloud_notm}} Logging CLI by running the following command:
+* Install the Logging CLI by running the following command:
 
    ```sh
    ibmcloud plugin install logging
