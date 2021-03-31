@@ -22,7 +22,7 @@ keywords: IBM Cloud Logging CLI, IBM Cloud Logging command line, IBM Cloud Loggi
 # Logging (ibmcloud logging) CLI
 {: #log-analysis-cli}
 
-The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} service instances for an account.
+The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for {{site.data.keyword.la_full_notm}} service instances for an account.
 {: shortdesc} 
 
 ## Prerequisites
@@ -44,7 +44,7 @@ You're notified on the command line when updates to the {{site.data.keyword.clou
 ## ibmcloud logging service-instances
 {: #logdna-service-instances}
 
-Use this command to list the service instances for {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}}. 
+Use this command to list the service instances for {{site.data.keyword.la_full_notm}}. 
 
 ```sh
 ibmcloud logging service-instances [OPTIONS]
