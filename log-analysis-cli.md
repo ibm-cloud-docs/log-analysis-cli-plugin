@@ -19,7 +19,7 @@ keywords: IBM Cloud Logging CLI, IBM Cloud Logging command line, IBM Cloud Loggi
 The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for {{site.data.keyword.la_full_notm}} service instances for an account.
 {: shortdesc} 
 
-The Logging (ibmcloud logging) CLI is based on the [Export logs V1 API](https://cloud.ibm.com/apidocs/log-analysis#export){: external}.
+Exporting using the UI uses the [V1 export API](https://cloud.ibm.com/apidocs/log-analysis#export){: external} and is limited to the functionality provided by that version of the API.
 {: important}
 
 ## Prerequisites
