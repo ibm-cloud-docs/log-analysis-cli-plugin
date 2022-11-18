@@ -2,7 +2,6 @@ toc:
   properties:
     subcollection: log-analysis-cli-plugin
     version: 2
-    category: logging_monitoring
     audience: service
     href: /docs/log-analysis-cli-plugin?topic=log-analysis-cli-plugin-log-analysis-cli
     console-page: /observe/logging
