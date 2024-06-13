@@ -131,7 +131,7 @@ ibmcloud logging service-instances --region us-south --output json
 ```
 {: pre}
 
-<!-- ===================================== -->
+
 
 ## ibmcloud logging export
 {: #log-analysis-export}
