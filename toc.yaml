@@ -8,12 +8,9 @@ toc:
     product-page: https://www.ibm.com/cloud/log-analysis
     path: log-analysis-cli-plugin
     label: IBM Log Analysis CLI
-    release-level: deprecated
-
   entries: 
   - navgroup: 
       id: reference
       topics: 
       - log-analysis-cli.md
-
   
