@@ -19,8 +19,10 @@ keywords: IBM Cloud Logging CLI, IBM Cloud Logging command line, IBM Cloud Loggi
 The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to list and export information for {{site.data.keyword.la_full_notm}} service instances for an account.
 {: shortdesc} 
 
-As of 28 March 2024 the {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} services are deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}}, which replaces these two services, prior to 30 March 2025. For information about {{site.data.keyword.logs_full_notm}}, see the [{{site.data.keyword.logs_full_notm}} documentation](/docs/cloud-logs).
-{: deprecated}
+End of Support: As of 30 March 2025 the {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} services are no longer supported. {{site.data.keyword.logs_full_notm}} replaces these two services. For information about {{site.data.keyword.logs_full_notm}}, see the [{{site.data.keyword.logs_full_notm}} documentation](/docs/cloud-logs).
+{: attention}
+
+
 
 Exporting using the UI uses the [V1 export API](https://cloud.ibm.com/apidocs/log-analysis#export){: external} and is limited to the functionality provided by that version of the API.
 {: important}
